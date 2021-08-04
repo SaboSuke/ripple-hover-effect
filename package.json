@@ -1,5 +1,5 @@
 {
-  "name": "ripple-effect",
+  "name": "ripple-hover-effect",
   "version": "1.0.0",
   "description": "Javascript library to animate images on hover.",
   "main": "src/ripple-effect.js",
