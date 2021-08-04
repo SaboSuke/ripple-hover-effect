@@ -4,6 +4,8 @@ Javascript library to animate images on hover.
 
 If this project help you, don't forget to star it.
 
+[Codepen demo](https://codepen.io/alxrbrown/pen/GxVQLr) by Essam Abed
+
 ## Example
 <p align="center">
     <img alt="example 1" src="gifs/ripple-effect-demo.gif">
@@ -78,8 +80,6 @@ Thanks to :
 *   Gsap by [GreenSock](https://greensock.com/)
 *   Images from [Unsplash.com](http://unsplash.com/)
 
-## Codepen Demo
+## Video Demo
 
 https://user-images.githubusercontent.com/42716267/128239935-5ce12c7a-00ba-4ce7-adc6-15443d1cffc2.mp4
-
-* [Codepen demo](https://codepen.io/alxrbrown/pen/GxVQLr) by Essam Abed
