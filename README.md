@@ -4,8 +4,6 @@ Javascript library to animate images on hover.
 
 If this project help you, don't forget to star it.
 
-[**DEMO**](https://tympanus.net/Development/DistortionHoverEffect/)
-
 ## Example
 <p align="center">
     <img alt="example 1" src="gifs/ripple-effect-demo.gif">
@@ -16,7 +14,7 @@ To load the images you'll need to view the demo via a web server, simply open th
 
 ## Basic usage
 
-This little library needs [Three.js](https://threejs.org) and [TweenMax](https://greensock.com/) to do the transition, so you need to include it before this library.
+This little library needs [Three.js](https://threejs.org) and [Gsap](https://greensock.com/) to do the transition, so you need to include it before this library.
 
 How it works:
 
@@ -28,9 +26,9 @@ How it works:
 <script src="three.min.js"></script>
 <script src="gsap.min.js"></script>
 
-<script src="dist/hover-effect.min.js"></script>
+<script src="dist/ripple-effect.js"></script>
 <script>
-    var myAnimation = new RippleEffect({
+    var ripple = new RippleEffect({
         parent: document.querySelector('.my-div'),
         intensity: 1,
         strength: 2,
@@ -52,7 +50,7 @@ How it works:
 | Name                    | Type            | Default         | Description |
 |-------------------------|-----------------|-----------------|-------------|
 |`parent`                 | `Dom element`   | `null`          | The DOM element where the animation will be injected. The images of the animation will take the parent's size. |
-|`texture`                | `Image`         | `null`          | The first `Image` of the animation. |
+|`texture`                | `Image`         | `null`          | The `Image` of the animation. |
 
 ### Optional parameters
 
@@ -81,8 +79,7 @@ Thanks to :
 *   Images from [Unsplash.com](http://unsplash.com/)
 
 ## Codepen Demo
-<p align="center">
-    <img alt="Alex Brown demo" src="gifs/alex_brown.gif" width="512">
-</p>
+
+https://user-images.githubusercontent.com/42716267/128239935-5ce12c7a-00ba-4ce7-adc6-15443d1cffc2.mp4
 
 * [Codepen demo](https://codepen.io/alxrbrown/pen/GxVQLr) by Essam Abed
