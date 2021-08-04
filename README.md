@@ -8,7 +8,7 @@ If this project help you, don't forget to star it.
 
 ## Example 1
 
-https://user-images.githubusercontent.com/42716267/128241716-ecbf9638-8dbf-4d22-87d7-5cbd6f233942.mp4
+https://user-images.githubusercontent.com/42716267/128242527-6c0b5d7e-70cd-4fb9-83c3-34d5960f233d.mp4
 
 ## Example 2
 
