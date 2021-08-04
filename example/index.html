@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ripple Effect</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/easy.css">
+</head>
+<body>
+    <main>
+        <header>
+            <ul class="flex flex_between flex_start">
+                <li>
+                    <h4> <span></span> <p>Ripple Effects</p></h4>
+                </li>
+                
+                <li>
+                    <a target="_blank" href="https://github.com/SaboSuke/ripple-effect">.Github</a>
+                </li>
+            </ul>
+        </header>
+        <div class="container">
+            <div class="cards">
+                <div class="card card_full" id="card1">
+                    <div class="card_bg">
+                        <img id="bg1" src="./img/nature-01.jpg" alt="">
+                    </div>
+                    <div class="card_title flex flex_between flex_center">
+                        <h4>Lorem, ipsum dolor.</h4>
+                        <a href="#">+</a>
+                    </div>
+                    <div class="card_details">
+                        <h1>Lorem ipsum dolor sit amet.</h1>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas cumque nulla quae, harum aut doloremque animi voluptas labore vitae iusto.</p>
+                    </div>
+                </div>
+                <div class="card card_full" id="card2">
+                    <div class="card_bg">
+                        <img id="bg2" src="./img/nature-02.jpg" alt="">
+                    </div>
+                    <div class="card_title flex flex_between flex_center">
+                        <h4>Lorem, ipsum dolor.</h4>
+                        <a href="#">+</a>
+                    </div>
+                    <div class="card_details">
+                        <h1>Lorem ipsum dolor sit amet.</h1>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas cumque nulla quae, harum aut doloremque animi voluptas labore vitae iusto.</p>
+                    </div>
+                </div>
+                <div class="card card_full" id="card3">
+                    <div class="card_bg">
+                        <img id="bg3" src="./img/nature-03.jpg" alt="">
+                    </div>
+                    <div class="card_title flex flex_between flex_center">
+                        <h4>Lorem, ipsum dolor.</h4>
+                        <a href="#">+</a>
+                    </div>
+                    <div class="card_details">
+                        <h1>Lorem ipsum dolor sit amet.</h1>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas cumque nulla quae, harum aut doloremque animi voluptas labore vitae iusto.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src="js/three.min.js"></script>
+    <script src="js/gsap.min.js"></script>
+    <script src="js/animate.js" type="module"></script>
+    <script src="../src/ripple-effect.js"></script>
+    <script>
+        Array.from(document.querySelectorAll('.card_bg')).forEach((element) => {
+            const img = element.querySelector('img');
+            new RippleEffect({
+                parent: element,
+                texture: img.getAttribute('src'),
+            });
+        });
+        
+        window.onload = function(){
+            const bgRipple = new RippleEffect({
+                parent: document.body,
+                intensity: 1,
+                strength: 2,
+                area: 4,
+                waveSpeed: 0.001,
+                speedIn: 2,
+                speedOut: 1.5,
+                easing: undefined,
+                hover: false,
+                texture: './img/nature-04.jpg',
+            }).start()
+        }
+    </script>
+</body>
+</html>
