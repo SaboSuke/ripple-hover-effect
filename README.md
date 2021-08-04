@@ -10,6 +10,18 @@ If this project help you, don't forget to star it.
 
 https://user-images.githubusercontent.com/42716267/128242527-6c0b5d7e-70cd-4fb9-83c3-34d5960f233d.mp4
 
+## Installation 
+
+Install using npm:
+
+```
+    npm i ripple-hover-effect
+```
+
+Or use a cdn:
+
+> https://unpkg.com/browse/ripple-hover-effect@1.0.0/src/ripple-effect.js
+
 ## Use locally
 To load the images you'll need to view the demo via a web server, simply open the projet with vscode then run the `index.html` file with `Live Server`.
 
