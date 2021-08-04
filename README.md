@@ -6,10 +6,13 @@ If this project help you, don't forget to star it.
 
 [Codepen demo](https://codepen.io/Sabosuke/pen/eYWLGjv) by Essam Abed
 
-## Example
-<p align="center">
-    <img alt="example 1" src="gifs/ripple-effect-demo.gif">
-</p>
+## Example 1
+
+https://user-images.githubusercontent.com/42716267/128241716-ecbf9638-8dbf-4d22-87d7-5cbd6f233942.mp4
+
+## Example 2
+
+https://user-images.githubusercontent.com/42716267/128239935-5ce12c7a-00ba-4ce7-adc6-15443d1cffc2.mp4
 
 ## Use locally
 To load the images you'll need to view the demo via a web server, simply open the projet with vscode then run the `index.html` file with `Live Server`.
@@ -79,7 +82,3 @@ Thanks to :
 *   [Three.js](https://threejs.org)
 *   Gsap by [GreenSock](https://greensock.com/)
 *   Images from [Unsplash.com](http://unsplash.com/)
-
-## Video Demo
-
-https://user-images.githubusercontent.com/42716267/128239935-5ce12c7a-00ba-4ce7-adc6-15443d1cffc2.mp4
