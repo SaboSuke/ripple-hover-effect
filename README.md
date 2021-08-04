@@ -4,7 +4,7 @@ Javascript library to animate images on hover.
 
 If this project help you, don't forget to star it.
 
-[Codepen demo](https://codepen.io/alxrbrown/pen/GxVQLr) by Essam Abed
+[Codepen demo](https://codepen.io/Sabosuke/pen/eYWLGjv) by Essam Abed
 
 ## Example
 <p align="center">
