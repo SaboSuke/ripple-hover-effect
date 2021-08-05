@@ -1,4 +1,4 @@
-# Ripple effect
+# Ripple Hover Effect
 
 Javascript library to animate images on hover.
 
