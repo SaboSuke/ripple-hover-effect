@@ -3,12 +3,14 @@
 <head>
 	<meta charset=utf-8>
 	<title>Ripple Demo</title>
-	<link rel="stylesheet" href="./example/css/easy.css">
 	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;500&family=Poppins:wght@300;400;500;600&display=swap');
 		body {
+			--primary: #228ae3;
 			background: #080808;
 			color: white;
 			padding-bottom: 40px;
+			font-family: 'Poppins', sans-serif;
 		}
 
 		.demo {
@@ -46,22 +48,50 @@
 		h1{
 			margin-bottom: 30px;
 		}
+
+		.split{
+			display: flex;
+			justify-content: space-between;
+			align-items: flex-start;
+		}
+
+		.btn{
+			border: 1px solid var(--primary);
+			border-radius: 5px;
+			padding: 8px 15px;
+			outline: none;
+			font: 500 bold 16px 'Poppins', sans-serif;
+			box-shadow: 0px 0px 5px -2px rgba(0, 0, 0, 0.25);
+			transition: .3s all ease-in-out;
+		}
+		
+		.btn_primary{
+			background: var(--primary);
+			border-color: var(--primary);
+			color: white;
+		}
+		
+		.btn_primary:hover{
+			background: transparent;
+			border-color: var(--primary);
+			color: var(--primary);
+		}
 	</style>
 </head>
 
 <body>
 	<div class="demo-normal">
 		<h1>Basic Usage</h1>
-		<div class="flex flex_center flex_between">
+		<div class="split">
 			<div class='div1 demo'></div>
 			<div class='div2 demo'></div>
 		</div>
-		<div class="flex flex_center flex_between">
+		<div class="split">
 			<div class='div3 demo'></div>
 			<div class='div4 demo'></div>
 		</div>
 		
-		<div class="flex flex_center flex_between">
+		<div class="split">
 			<div class='div6 demo'></div>
 			<div class='div7 demo'></div>
 		</div>
@@ -73,7 +103,7 @@
 			<div class='div5 demo'></div>
 			<div class="controls">
 				<button class="start control btn btn_primary">Start</span>
-				<button class="stop control btn btn_outline_primary">Stop</span>
+				<button class="stop control btn btn_primary">Stop</span>
 			</div>
 		</div>
 	</div>
@@ -82,14 +112,14 @@
 	<script src="example/js/gsap.min.js"></script>
 	<script src="src/ripple-effect.min.js"></script>
 	<script>
-		var button = new RippleEffect({
+		var ripple1 = new RippleEffect({
 			parent: document.querySelector('.div1'),			
 			texture: './imgs/art-01.jpg',
 			speedIn: 2,
 			speedOut: 1.5,
 		});
 
-		var button2 = new RippleEffect({
+		var ripple2 = new RippleEffect({
 			parent: document.querySelector('.div2'),			
 			texture: './imgs/art-02.jpg',
 			intensity: 2,
@@ -98,7 +128,7 @@
 			waveSpeed: 0.008,
 		});
 
-		var button3 = new RippleEffect({
+		var ripple3 = new RippleEffect({
 			parent: document.querySelector('.div3'),
 			texture: './imgs/art-03.jpg',
 			intensity: 2,
@@ -108,7 +138,7 @@
 			speedIn: 2,
 			speedOut: 1,
 		});
-		var button3 = new RippleEffect({
+		var ripple4 = new RippleEffect({
 			parent: document.querySelector('.div7'),
 			texture: './imgs/art-04.jpg',
 			intensity: 1,
@@ -119,12 +149,12 @@
 			speedOut: 1,
 		});
 
-		var button4 = new RippleEffect({
+		var ripple5 = new RippleEffect({
 			parent: document.querySelector('.div4'),
 			texture: './imgs/nature-01.jpg',
 		});
 
-		var button5 = new RippleEffect({
+		var ripple6 = new RippleEffect({
 			parent: document.querySelector('.div5'),
 			texture: './imgs/control.jpg',
 			intensity: 1.2,
@@ -132,10 +162,10 @@
 			waveSpeed: 0.008,
 			hover: false
 		});
-		document.querySelector('.start').addEventListener('click', button5.start);
-		document.querySelector('.stop').addEventListener('click', button5.stop);
+		document.querySelector('.start').addEventListener('click', ripple6.start);
+		document.querySelector('.stop').addEventListener('click', ripple6.stop);
 
-		var button6 = new RippleEffect({
+		var ripple7 = new RippleEffect({
 			parent: document.querySelector('.div6'),
 			texture: './imgs/nature-02.jpg',
 		});

@@ -1,8 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;500&family=Poppins:wght@300;400;500;600&display=swap');
+:root{
+
+    --primary: #228ae3;
+    --secondary: #1acf47;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    transition: .3s all ease-in-out
+}
+a:hover{
+    color: var(--primary);
+}
+ul{
+    list-style-type: none;
+}
+
 html{background: #fff;}
 body{
     width: 100vw;
     height: 100vh;
+    overflow: hidden;
     background: #0e0e0e !important;
+    font-family: 'Poppins', sans-serif;
 }
 
 body>canvas{
@@ -29,12 +57,23 @@ header{
     letter-spacing: 1px;
     color: white;
 }
-header h4{display: flex; align-items: center;}
+header h4{
+    display: flex; 
+    align-items: center;
+}
 header h4 span{
     height: 2px;
     background: white;
     width: 50px;
     margin-right: 10px
+}
+header h4, header a{
+    font-size: 16px;
+}
+header ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
 }
 
 .container{
@@ -45,10 +84,70 @@ header h4 span{
     place-items: center;
 }
 
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    padding: 50px;
+}
+
+.cards .card{
+    width: 300px;
+    height: 350px;
+    max-height: 400px;
+    padding: 10px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px -3px rgba(0, 0, 0, .5);
+}
+
 .card{
     overflow: hidden;
     position: relative;
     cursor: pointer;
+}
+
+.card_full{
+    position: relative;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.card_full>.card_bg{
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.card_full>.card_bg>img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card_full>.card_details{
+    position: absolute;
+    z-index: 2;
+    bottom: 0px;
+    left: 0;
+    background: linear-gradient(to top, black, transparent);
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 40px;
+}
+.card_full>.card_details h1{
+    font-size: 16px;
+    color: white;
+    margin-bottom: 20px;
+}
+.card_full>.card_details p{
+    font-size: 13px;
+    color: white;
 }
 
 .card .card_details{
@@ -71,6 +170,9 @@ header h4 span{
 }
 
 .card .card_title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     position: absolute;
     width: 100%;
     left: 0;
